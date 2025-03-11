@@ -1,9 +1,11 @@
 name: Update Random Text
 
 on:
+  push:
+  pull_request:
   schedule:
     - cron: '0 */12 * * *'  # Exécute toutes les 12 heures
-  workflow_dispatch:  # Permet de lancer l'action manuellement
+  workflow_dispatch:  # Permet de le lancer manuellement
 
 jobs:
   update-text:
