@@ -3,7 +3,7 @@ name: Update Random Text
 on:
   schedule:
     - cron: '0 */12 * * *'  # Exécute toutes les 12 heures
-  workflow_dispatch:  # Permet aussi de lancer l'action manuellement
+  workflow_dispatch:  # Permet de lancer l'action manuellement
 
 jobs:
   update-text:
@@ -24,4 +24,3 @@ jobs:
           git add random_text.txt
           git commit -m "Mise à jour automatique du texte aléatoire"
           git push
-
